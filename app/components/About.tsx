@@ -1,3 +1,4 @@
+/* eslint-disable react/no-unescaped-entities */
 import { Progress } from "@/components/ui/progress"
 import project1 from "../../public/assets/proj5.png"
 import project2 from "../../public/assets/proj6.png"
