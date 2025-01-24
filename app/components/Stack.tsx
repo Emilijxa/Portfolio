@@ -2,7 +2,7 @@
 
 import React, { useEffect } from "react"
 import { SiVercel, SiFigma, SiReact, SiNodedotjs, SiMongodb, SiDocker } from "react-icons/si"
-import { color, motion, useAnimation } from "framer-motion"
+import { motion, useAnimation } from "framer-motion"
 import { useInView } from "react-intersection-observer"
 
 const stackItems = [
