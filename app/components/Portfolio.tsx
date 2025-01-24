@@ -1,6 +1,6 @@
 "use client"
 
-import React, { useState, useEffect } from "react"
+import React, { useState } from "react"
 import Image from "next/image"
 import project1 from "@/public/assets/proj25.png"
 import project2 from "@/public/assets/proj26.png"
