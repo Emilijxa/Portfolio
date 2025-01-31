@@ -7,6 +7,7 @@ import { KeyMetrics } from "./components/KeyMetrics";
 import { Services } from "./components/Services";
 import { Contact } from "./components/Contact";
 import { Footer } from "./components/Footer";
+import { Analytics } from "@vercel/analytics/react"
 
 export default function Home() {
   return (
@@ -20,6 +21,7 @@ export default function Home() {
       <Services/>
       <Contact/>
       <Footer/>
+      <Analytics/>
     </>
   );
 }
