@@ -4,7 +4,9 @@ import { motion } from 'framer-motion';
 
 export const Contact = () => {
     return(
-        <section id="Contact" className='py-32 text-white max-w-[1200px] max-auto px-4'>
+
+        <div className="overflow-x-hidden">
+        <section id="Contact" className='py-32 text-white max-w-[1200px] max-auto px-4 overflow-hidden'>
             <motion.div
                 initial={{ opacity: 0, y: 20 }}
                 whileInView={{ opacity: 1, y: 0 }}
@@ -63,7 +65,7 @@ export const Contact = () => {
                     initial={{ opacity: 0, x: 20 }}
                     whileInView={{ opacity: 1, x: 0 }}
                     transition={{ duration: 0.6, delay: 0.6 }}
-                    className="w-full h-full min-h-[400px] rounded-2xl overflow-hidden ml-20 mt-20"
+                    className="w-full max-w-lg sm:max-w-xl md:max-w-2xl h-72 rounded-2xl overflow-hidden mx-auto mt-10 lg:mt-20 lg:ml-20 flex justify-center"
                 >
                     <iframe
                         src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d310911.5076289338!2d-2.193298450161388!3d52.49730921482784!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4870942d1b417173%3A0xca81fef0aeee7998!2sBirmingham!5e0!3m2!1sen!2suk!4v1737911006804!5m2!1sen!2suk"
@@ -74,7 +76,9 @@ export const Contact = () => {
                         loading="lazy"
                     ></iframe>
                 </motion.div>
+
             </motion.div> 
         </section>
+        </div>
     );
 };
