@@ -62,8 +62,8 @@ export const Stack = () => {
                         }, [controls, inView])
 
             return(
-        <section className="">
-            <div className="max-w[250px] mx-auto text-center">
+            <section className="overflow-hidden">
+            <div className="max-w-[250px] mx-auto text-center">
                 <h2 className="text-7xl text-gray-200 font-bold mb-10">My Stack</h2>
                 <div className="grid gap-8" ref={ref}>
                     {stackItems.map((item, index) => (
