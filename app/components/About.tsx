@@ -47,9 +47,8 @@ export const About = () => {
                             <Image
                                 src={project1}
                                 alt="project 1"
-                                layout="fill"
-                                objectFit="cover"
-                                className="rounded-lg"
+                                fill
+                                className="rounded-lg object-cover"
                             />
 
                     </div>
@@ -113,9 +112,8 @@ export const About = () => {
                     <Image
                         src={project2}
                         alt="project 2"
-                        layout="fill"
-                        objectFit="cover"
-                        className="rounded-lg"
+                        fill
+                        className="rounded-lg object-cover"
                     />
                 </div>
                 <div>
