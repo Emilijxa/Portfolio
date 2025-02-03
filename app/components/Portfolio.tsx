@@ -5,6 +5,7 @@ import Image from "next/image"
 import project1 from "@/public/assets/proj25.png"
 import project2 from "@/public/assets/proj26.png"
 import project3 from "@/public/assets/proj7.png"
+import Link from "next/link";
 
 const projects = [
     {
@@ -13,6 +14,7 @@ const projects = [
         title: 'Trickr Street',
         description: "a web app helping families locate Halloween trick-or-treating homes, winning first place at a Good Growth hackathon. Built using Next.js, React, and Google Maps API with Supabase authentication, with plans to expand features for profile pages and geographic location tracking",
         image: project1,
+        link: "https://trickrstreet.vercel.app",
     },
     {
         id: 2, 
@@ -20,6 +22,7 @@ const projects = [
         title: 'SATellite Prep',
         description: "a visually engaging AI tutor app designed for Year 6 SATs students, providing free, accessible tutoring through an interactive chatbot. Built using React and integrated with Mistralai to deliver personalized support with animated videos and emoji-friendly responses that appeal to young learners.",
         image: project2,
+        link: "https://final-project-the-visualisers-ctue.vercel.app",
     },
     {
         id: 3, 
@@ -27,6 +30,7 @@ const projects = [
         title: 'Atomic-AI driven outreach',
         description: "Atomic is our AI-driven outreach tool that maximizes engagement.",
         image: project3,
+        link: "#",
     },
 ];
 
@@ -70,14 +74,17 @@ export const Portfolio = () => {
                 ))}
 
                 </div>
-        <div className="flex items-center justify-center">
+        <div className="flex items-center justify-center group">
+            <Link href={selectedProject.link} target="_blank" rel="noopener noreferrer">
             <Image
                 src={selectedProject.image.src}
                 alt={selectedProject.title}
-                className="rounded-xl shadow-lg transition-opacity duration-500 ease-in-out"
+                className="rounded-xl shadow-lg transition-all duration-500 ease-in-out 
+                   group-hover:shadow-[0_0_20px_#60a5fa] group-hover:scale-105"
                 width={selectedProject.title === 'SATellite Prep' ? 250 : 600} 
                 height={450}
             />
+            </Link>
             </div>
             </div>
 

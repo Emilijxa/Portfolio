@@ -30,8 +30,7 @@ export const Navbar = () => {
             <ul className="flex flex-row p-2 space-x-8">
                 {navLinks.map((link, index) => (
                     <li key={index}>
-                        <Link href={link.path} className="transform hover:text-blue/400
-                                                          transition-all duration-300 ease-in-out">
+                        <Link href={link.path} className="transform hover:text-blue-400 transition-all duration-300 ease-in-out">
                             {link.title}
                         </Link>
 
